@@ -16,11 +16,13 @@ public class Customer {
     private String email;
 }
 
+
+
 - application
 
 @SpringBootApplication
-public class CustomerServiceApplication {
 
+        public class CustomerServiceApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(CustomerServiceApplication.class, args);
 	}
@@ -40,7 +42,7 @@ public class CustomerServiceApplication {
 }
 
 2. Gestion des produits
-     Product
+    - Product
 
  @Entity
 @Data @NoArgsConstructor @AllArgsConstructor @Builder
@@ -147,3 +149,17 @@ public class EurikaDiscoveryApplication {
 	}
 
 }
+
+
+Partie 2 : Billing Service avec Open Feign Rest Client
+
+Dans cette partir, nous avons utilisé Feign  pour deux opérations clés :
+
+  1-Récupérer les informations du client à partir du service Customer
+  2-Récupérer la liste des produits à partir du service ProductItem
+  <img width="600" alt="image" src="https://github.com/OumaymaMHT123/demo-SpringCloud-Kafka/assets/95369549/e48fcb49-eb70-4dce-a42f-b8aa5f6b5e40">
+
+  Partie 3 : Angular
+  <img width="283" alt="image" src="https://github.com/OumaymaMHT123/demo-SpringCloud-Kafka/assets/95369549/2d460460-aca6-4a08-bf99-91a8feb85070">
+
+
